@@ -28,7 +28,7 @@ jobs:
       - name: Build project
         run: npm run build
         with:
-          react_app_movie_creds: ${{ REACT_APP_MOVIE_API_CREDS }} 
+          react_app_movie_creds: ${{ secrets.REACT_APP_MOVIE_API_CREDS }} 
 
       - name: Run tests
         run: npm run test
