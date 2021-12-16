@@ -29,8 +29,8 @@ jobs:
         run: REACT_APP_MOVIE_API_CREDS=${{ secrets.REACT_APP_MOVIE_API_CREDS }} npm run build
 
 
-      - name: Run tests
-        run: npm run test
+      # - name: Run tests
+      #   run: npm run test
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
