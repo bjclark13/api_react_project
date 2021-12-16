@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
 import Home from "./Home";
@@ -41,7 +41,14 @@ function App() {
               path="/movie-info/:movieId"
               element={<MovieInfo favorite={favorite} />}
             />
+            <Route
+              path="*"
+              element={<Navigate to="/" />}
+            />
           </Routes>
+
+
+
         </div>
       </div>
     </Router>
