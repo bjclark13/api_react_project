@@ -41,6 +41,7 @@ function App() {
               path="/movie-info/:movieId"
               element={<MovieInfo favorite={favorite} />}
             />
+
             <Route
               path="*"
               element={<Navigate to="/" />}
